@@ -8,5 +8,5 @@ var foods = ["apple", "sandwich", "chips"]
 console.log(foods);
 
 var meals = drinks.concat(foods);
-meals.reverse();
-console.log(meals);
+var mealsReversed = meals.reverse();
+console.log(mealsReversed);
