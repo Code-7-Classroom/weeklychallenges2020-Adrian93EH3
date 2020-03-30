@@ -1,12 +1,7 @@
-// All the array methods are .push(), .shift(), .unshift(), .pop(), .shift() and lastly .splice()
-var drinks=[];
-var drinks = ["water", "coffee", "tea"]
-console.log(drinks);
-
-var foods=[];
-var foods = ["apple", "sandwich", "chips"]
-console.log(foods);
-
+// 3 of the array methods are .push(), .shift(), .unshift()
+var drinks = ['water', 'coffee', 'tea']
+var foods = ['apple', 'sandwich', 'chips']
 var meals = drinks.concat(foods);
 var mealsReversed = meals.reverse();
+
 console.log(mealsReversed);
