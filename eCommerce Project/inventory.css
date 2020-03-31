@@ -1,0 +1,114 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-color: silver;
+    font-family: Barlow;
+  }
+
+h1 {
+    margin-top: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+img {
+  height: 175px;
+  padding-left: 5px;
+}
+
+.desc {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+ 
+.bugatti {
+    width: 95%;
+    padding-left: 7.6px;
+}
+
+.lambo {
+  width: 95%;
+  padding-left: 8px;
+}
+
+.veneno {
+    width: 95%;
+    padding-left: 7.6px;
+}
+
+.f {
+  width: 95%;
+}
+
+.tm {
+  width: 95%;
+}
+
+.k {
+  width: 95%;
+}
+
+.clk {
+  width: 95%;
+}
+
+.l {
+  margin: 0;
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.siah {
+ width: 95%;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+  
+.i {
+    text-align: center;
+    font-size: 1.3rem;
+}
+  
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    height: 420px;
+    width: 420px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #ffcf40;
+}
+
+@media (min-width: 320px){
+  .greeting {
+    font-size: 20px;
+    border: none;
+  }
+  .items {
+    height: 520px;
+  }
+}
+@media (min-width: 768px){
+  .greeting {
+    border: none;
+    font-size: 35px;
+  }
+  .items {
+    height: 420px;
+  }
+}
