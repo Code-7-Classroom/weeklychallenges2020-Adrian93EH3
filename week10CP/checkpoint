@@ -1,9 +1,9 @@
 1: " let " and " const " are the two methods to store information in an object. You can also use console.log("insert object here") and it will display it if the code is right.
 
 2: let me = {
-    name: "Adrian Diaz",
-    sayHi: function(){
-        console.log(this.name);
+    name: 'Adrian Diaz',
+    sayHi: () =>{
+        console.log(me.name);
     }
 };
 me.sayHi();
