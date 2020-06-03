@@ -3,19 +3,19 @@ CREATE DATABASE guidedInquiry;
 USE guidedInquiry;
 
 CREATE TABLE cars(
-    make VARCHAR(50),
+	make VARCHAR(50),
     model VARCHAR(50),
     year INT 
 );
 
 INSERT INTO cars(make, model, year)
-VALUES ("Mustang", "Ford", 2020),
-("Charger", "Dodge", 2020),
-("Cybertruck", "Tesla", 2020);
+VALUES ("Honda", "Civic Type R", 2001),
+("Honda", "Integra Type R", 2000),
+("Honda", "NSX", 2001);
 
 -- Add Two Cars to the Cars Table
 INSERT INTO cars(make, model, year)
-VALUES ("Corvette", "Chevrolet", 2020),
-("Aventador", "Lamborghini", 2020);
+VALUES ("Chevrolet", "Corvette ZR1", 2018),
+("Lamborghini", "Diablo SV", 1997);
 
 SELECT * FROM cars;

@@ -3,23 +3,23 @@ CREATE DATABASE guidedInquiry;
 USE guidedInquiry;
 
 CREATE TABLE cars(
-    make VARCHAR(50),
+	make VARCHAR(50),
     model VARCHAR(50),
     year INT 
 );
 
-INSERT INTO cars(model, make, year)
-VALUES ("Mustang", "Ford", 2020),
-("Charger", "Dodge", 2020),
-("Cybertruck", "Tesla", 2020),
-("Corvette", "Chevrolet", 2020),
-("Aventador", "Lamborghini", 2020);
+INSERT INTO cars(make, model, year)
+VALUES ("Honda", "Civic Type R", 2001),
+("Honda", "Integra Type R", 2000),
+("Honda", "NSX", 2001),
+("Chevrolet", "Corvette ZR1", 2018),
+("Lamborghini", "Diablo SV", 1997);
 
 -- Add Three Cars to the Cars Table in single query
-INSERT INTO cars(model, make, year)
+INSERT INTO cars(make, model, year)
 VALUES ("Camry", "Toyota", 2020),
 ("Accord", "Honda", 2020),
-("Civic", "Honda", 2020);
+("Odyssey", "Honda", 2020);
 
 -- Add price and color column
 ALTER TABLE cars
@@ -27,35 +27,35 @@ ADD (price DECIMAL(10,2), color VARCHAR(50));
 
 -- Update Cars table with new data
 UPDATE cars 
-SET price = 26670.00, color = "black"
-WHERE model = "Mustang";
+SET price = 15990.00, color = "Championship White"
+WHERE model = "Civic Type R";
 
 UPDATE cars 
-SET price = 29995.00 , color = "orange"
-WHERE model = "Charger";
+SET price = 18999.00 , color = "Phoenix Yellow"
+WHERE model = "Integra Type R";
 
 UPDATE cars 
-SET price = 39000.00 , color = "green"
-WHERE model = "Cybertruck";
+SET price = 49000.00 , color = "Midnight Purple III"
+WHERE model = "NSX";
 
 UPDATE cars 
-SET price = 58900.00, color = "white"
-WHERE model = "Corvette";
+SET price = 88900.00, color = "Torch Red"
+WHERE model = "Corvette ZR1";
 
 UPDATE cars 
-SET price = 417826.00, color = "blue"
-WHERE model = "Aventador";
+SET price = 521826.00, color = "Giallo Gala"
+WHERE model = "Diablo SV";
 
 UPDATE cars 
-SET price = 24425.00, color = "sky blue"
+SET price = 24425.00, color = "Silver"
 WHERE model = "Camry";
 
 UPDATE cars 
-SET price = 24020.00, color = "yellow"
+SET price = 24020.00, color = "Electron Blue Pearl"
 WHERE model = "Accord";
 
 UPDATE cars 
-SET price = 19850.00, color = "red"
+SET price = 19850.00, color = "Black"
 WHERE model = "Civic";
 
 SELECT * FROM cars;

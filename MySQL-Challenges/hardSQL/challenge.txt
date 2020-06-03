@@ -3,7 +3,7 @@ CREATE DATABASE guidedInquiry;
 USE guidedInquiry;
 
 CREATE TABLE movies(
-    title VARCHAR(255), 
+	title VARCHAR(255), 
     release_date DATE, 
     rating ENUM('G','PG','PG13','R','MA')
 );
@@ -11,11 +11,11 @@ CREATE TABLE movies(
 INSERT INTO movies(title, release_date, rating)
 VALUES("The Shining", "1980-05-23", "R"),
 ("Inception", "2010-07-13", "PG13"),
-("Titanic", "1997-12-19", "PG13"),
-("Jumanji", "1995-12-15", "PG"),
-("The Goonies", "1985-06-07", "PG"),
-("Rocky", "1976-11-21", "PG"),
-("Alien", "1979-05-25", "R"),
+("John Wick 2", "2017-02-10", "R"),
+("The Collector", "2009-07-13", "R"),
+("John Wick 3", "2019-05-17", "R"),
+("The Collection", "2012-11-30", "R"),
+("Unstoppable", "2010-11-12", "PG-13"),
 ("The Other Guys", "2010-08-05", "PG13"),
 ("John Wick", "2014-10-24", "R"),
 ("Split", "2017-01-19", "PG13");
@@ -34,24 +34,24 @@ SET first_name = "Christopher", last_name = "Nolan"
 WHERE title = "Inception";
 
 UPDATE movies
-SET first_name = "James", last_name = "Cameron"
-WHERE title = "Titanic";
+SET first_name = "Chad", last_name = "Stahelski"
+WHERE title = "John Wick 2";
 
 UPDATE movies
-SET first_name = "Joe", last_name = "Johnston"
-WHERE title = "Jumanji";
+SET first_name = "Marcus", last_name = "Dunstan"
+WHERE title = "The Collector";
 
 UPDATE movies
-SET first_name = "Richard", last_name = "Donner"
-WHERE title = "The Goonies";
+SET first_name = "Chad", last_name = "Stahelski"
+WHERE title = "John Wick 3";
 
 UPDATE movies
-SET first_name = "John", last_name = "Avildsen"
-WHERE title = "Rocky";
+SET first_name = "Marcus", last_name = "Dunstan"
+WHERE title = "The Collection";
 
 UPDATE movies
-SET first_name = "Ridley", last_name = "Scott"
-WHERE title = "Alien";
+SET first_name = "Tony", last_name = "Scott"
+WHERE title = "Unstoppable";
 
 UPDATE movies
 SET first_name = "Adam", last_name = "McKay"
